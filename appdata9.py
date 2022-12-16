@@ -50,19 +50,6 @@ timenow = thistime.strftime("%m-%d-%y %H:%M:%S")
 st.markdown(f"{ySelect} Scale :  last updated on -- {timenow}")
 
 
-#@st.cache
-#def get_data_from_excel():
-df = pd.read_excel(
-            io=wb_file_path,
-            engine='pyxlsb',
-            sheet_name='Chart1',
-            skiprows=55,
-            usecols='B:P',
-            nrows=7,
-        )
-      #  return df
-#df = get_data_from_excel()
-#print(df)
 
 
 
