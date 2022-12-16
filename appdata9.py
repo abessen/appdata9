@@ -64,17 +64,6 @@ df = pd.read_excel(
 #df = get_data_from_excel()
 #print(df)
 
-# CSS to inject contained in a string
-hide_table_row_index = """
-            <style>
-            thead tr th:first-child {display:none}
-            tbody th {display:none}
-            </style>
-            """
-
-#st.write(df.style.format("{:.2}"))
-st.dataframe(df, width=1700, height=240)
-#st.write(df)
 
 
 
