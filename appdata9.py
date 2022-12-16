@@ -18,7 +18,7 @@ st.set_page_config(layout="wide")
 st.subheader("Real-Time / Live Data Dashboard: ")
 
 this_dir = Path(__file__).parent if '__file__' in locals() else Path.cwd()
-wb_file_path = this_dir / 'OLenMaster_v1.xlsb'
+wb_file_path = this_dir / 'OlenMaster_v1.xlsb'
 
 df = pd.read_excel(
                 io=wb_file_path,
