@@ -58,4 +58,4 @@ st.markdown(f"{ySelect} Scale :  last updated on -- {timenow}")
 
 #Refresh Delay
 time.sleep(30)
-#st.experimental_rerun()
+st.experimental_rerun()
