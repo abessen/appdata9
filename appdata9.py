@@ -6,7 +6,7 @@ import numpy as np
 import streamlit as st
 import altair as alt
 import pyxlsb
-#import git
+import git
 import time
 import datetime as dt
 from datetime import datetime, timezone,timedelta
@@ -21,14 +21,14 @@ this_dir = Path(__file__).parent if '__file__' in locals() else Path.cwd()
 wb_file_path = this_dir / 'OlenMaster_v1.xlsb'
 
 df = pd.read_excel(
-                io=wb_file_path,
-                engine='pyxlsb',
-                sheet_name='eWon',
-                skiprows=18,
-                usecols='BL:BY',
-                nrows=1441,
-                )
-print(df)
+    io=wb_file_path,
+    engine='pyxlsb',
+    sheet_name='eWon',
+    skiprows=18,
+    usecols='BL:BY',
+    nrows=1460,
+)
+#print(df)
 
         #  ----- SideBar  ____
 ySelect = st.sidebar.selectbox(label="Select Scale", options=["LFC8","LC2", "LC7","LC17","LC20","LC14"])
