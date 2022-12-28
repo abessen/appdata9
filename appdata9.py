@@ -6,7 +6,7 @@ import numpy as np
 import streamlit as st
 import altair as alt
 import pyxlsb
-import git
+#import git
 import time
 import datetime as dt
 from datetime import datetime, timezone,timedelta
@@ -28,7 +28,7 @@ df = pd.read_excel(
                 usecols='BL:BY',
                 nrows=1441,
                 )
-        #print(df)
+print(df)
 
         #  ----- SideBar  ____
 ySelect = st.sidebar.selectbox(label="Select Scale", options=["LFC8","LC2", "LC7","LC17","LC20","LC14"])
@@ -50,12 +50,6 @@ timenow = thistime.strftime("%m-%d-%y %H:%M:%S")
 st.markdown(f"{ySelect} Scale :  last updated on -- {timenow}")
 
 
-
-
-
-
-
-
 #Refresh Delay
 time.sleep(30)
-st.experimental_rerun()
+#st.experimental_rerun()
