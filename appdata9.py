@@ -18,17 +18,17 @@ st.set_page_config(layout="wide")
 st.subheader("Real-Time / Live Data Dashboard: ")
 
 this_dir = Path(__file__).parent if '__file__' in locals() else Path.cwd()
-wb_file_path = this_dir / 'OlenMaster_v1.xlsb'
+wb_file_path = this_dir / 'OlenDyData.xlsx'
 
 df = pd.read_excel(
     io=wb_file_path,
-    engine='pyxlsb',
-    sheet_name='eWon',
+    engine='openpyxl',
+    sheet_name='Olen1',
     skiprows=18,
     usecols='BL:BY',
-    nrows=1460,
+    nrows=1441,
 )
-#print(df)
+print(df)
 
         #  ----- SideBar  ____
 ySelect = st.sidebar.selectbox(label="Select Scale", options=["LFC8","LC2", "LC7","LC17","LC20","LC14"])
