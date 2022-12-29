@@ -1,4 +1,4 @@
-clsfrom pathlib import Path  # Python Standard Library
+from pathlib import Path  # Python Standard Library
 import pandas as pd  # pip install pandas openpyxl
 import plotly.express as px
 import plotly.graph_objects as go
